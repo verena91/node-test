@@ -5,8 +5,8 @@
 1. Create a Postgres DB called *nodetest*.
 2. Modify *config.json* file with the credentials of your database.
 3. Execute migrations and seeders:
-`npm run sequelize db:migrate`
-`npm run sequelize db:seed:all`
+`npm run sequelize db:migrate` or `npm run migrate`
+`npm run sequelize db:seed:all` or `npm run seed`
 
 4. Start the app with:
 `npm start`

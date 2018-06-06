@@ -1,51 +1,51 @@
-'use strict';
+
 
 module.exports = {
-  up: function (queryInterface, Sequelize) {
+  up(queryInterface, Sequelize) {
     return queryInterface.createTable('post', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       title: {
         type: Sequelize.STRING,
         allowNull: false,
         validate: {
-          notEmpty: true
-        }
+          notEmpty: true,
+        },
       },
       author: {
         type: Sequelize.STRING,
         allowNull: false,
         validate: {
-          notEmpty: true
-        }
+          notEmpty: true,
+        },
       },
       content: {
         type: Sequelize.TEXT,
         allowNull: false,
         validate: {
-          notEmpty: true
-        }
+          notEmpty: true,
+        },
       },
       created_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updated_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       deleted_at: {
         allowNull: true,
-        type: Sequelize.DATE
-      }
-    })
+        type: Sequelize.DATE,
+      },
+    });
   },
 
-  down: function (queryInterface, Sequelize) {
-    return queryInterface.dropTable('post')
-  }
+  down(queryInterface) {
+    return queryInterface.dropTable('post');
+  },
 };

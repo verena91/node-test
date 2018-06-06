@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "sequelize": "node_modules/.bin/sequelize",
+    "migrate": "npm run sequelize db:migrate",
+    "seed": "npm run sequelize db:seed:all",
     "lint": "eslint ."
   },
   "dependencies": {
