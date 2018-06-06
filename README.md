@@ -2,8 +2,8 @@
 
 ## Steps
 
-1. Create a Postgres DB called *nodetest*.
-2. Modify *config/config.json* file with the credentials of your database.
+1. Create a Postgres DB called **nodetest**.
+2. Modify **config/config.json** file with the credentials of your database.
 3. Execute migrations and seeders:
 
 * `npm run sequelize db:migrate` or `npm run migrate`
@@ -41,7 +41,7 @@ Payload:
 }
 `
 
-3. Update Post 
+4. Update Post 
 
 **PUT** http://localhost:3000/api/posts/1
 
@@ -55,6 +55,6 @@ Payload:
 }
 `
 
-4. Delete Post
+5. Delete Post
 
 **DELETE** http://localhost:3000/api/posts/1
