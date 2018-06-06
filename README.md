@@ -11,7 +11,7 @@
 4. Start the app with:
 `npm start`
 
-5. Execute eslint with:
+5. Run eslint verifications with:
 `npm lint`
 
 ## Endpoints
@@ -22,9 +22,9 @@
 
 `
 {
-    'author': 'Author',
-    'title': 'Title',
-    'content': 'Content'
+    "author": "Author",
+    "title": "Title",
+    "content": "Content"
 }
 `
 
@@ -32,9 +32,9 @@
 
 `
 {
-    'author': 'Author',
-    'title': 'Title',
-    'content': 'Content'
+    "author": "Author",
+    "title": "Title",
+    "content": "Content"
 }
 `
 

@@ -10,7 +10,7 @@ const config = require('../config/config.json')[env];
 
 const db = {};
 
-let sequalize;
+let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
